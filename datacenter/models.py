@@ -1,7 +1,12 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from django.db import models
 from django.utils.timezone import localtime
+
+
+def format_values(seconds: float) -> str:
+    """Formatting seconds to ISO format"""
+    return str(timedelta(seconds=seconds))
 
 
 class Passcard(models.Model):
