@@ -1,7 +1,7 @@
 # Watching Storage 
 Watch bank security panel.  
 The application shows: 
-> Active passcards,  
+> Active passcards  
 User visits  
 Who is in bank storage  
 How much time visitors spent in storage    
