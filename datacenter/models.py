@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import timedelta
 
 from django.db import models
 from django.utils.timezone import localtime
@@ -42,7 +42,7 @@ class Visit(models.Model):
         """Calculate duration visit"""
         entered_at = localtime(self.entered_at).replace(tzinfo=None)
         if not self.leaved_at:
-            datetime_now = datetime.now()
+            datetime_now = localtime()
             return (datetime_now - entered_at).total_seconds()
         else:
             leaved_at = localtime(self.leaved_at).replace(tzinfo=None)
