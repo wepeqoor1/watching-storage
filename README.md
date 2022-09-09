@@ -1,4 +1,5 @@
-# Watching Storage 
+# Bank security console
+
 Watch bank security panel.  
 The application shows: 
 > Active passcards  
@@ -21,11 +22,13 @@ HOST=<`HOST`>
 PORT=<`PORT`>  
 NAME=<`NAME`>  
 USER=<`USER`>  
-PASSWORD=<`PASSWORD`>  
+PASSWORD=<`PASSWORD`>
+DEBUG=<`DEBUG`> False ot True
+
 
 ## How to use
 ```bash
-$ python3 main.py
+$ python3 manage.py runserver
 ```
 
 ## Project Goals
