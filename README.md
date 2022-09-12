@@ -18,18 +18,18 @@ $ pip install -r requirements.txt
 
 ## Environment variables
 Create `.env` file and put database connections:  
-HOST=<`HOST`>  
-PORT=<`PORT`>  
-NAME=<`NAME`>  
-USER=<`USER`>  
-PASSWORD=<`PASSWORD`>  
+DB_HOST=<`HOST`>  
+DB_PORT=<`PORT`>  
+DB_NAME=<`NAME`>  
+DB_USER=<`USER`>  
+DB_PASSWORD=<`PASSWORD`>  
+
 >A boolean that turns on/off debug mode.  
 Never deploy a site into production with DEBUG turned on.  
 One of the main features of debug mode is the display of detailed error pages.  
 If your app raises an exception when DEBUG is True, Django will display a detailed traceback,  
 including a lot of metadata about your environment,  
-such as all the currently defined Django settings (from settings.py).`  
-
+such as all the currently defined Django settings (from settings.py).
 DEBUG=<`DEBUG`>  
 
 
