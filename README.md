@@ -39,7 +39,8 @@ get_random_secret_key()
 ```
 >After, copy generated `DJANGO_SECRET_KEY` and past to .env file.  
 
-DJANGO_SECRET_KEY=<`DJANGO_SECRET_KEY`>
+DJANGO_SECRET_KEY=<`DJANGO_SECRET_KEY`>  
+DJANGO_ALLOWED_HOSTS=<`DJANGO_ALLOWED_HOSTS`>
 
 ## How to use
 ```bash
