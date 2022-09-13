@@ -18,6 +18,7 @@ $ pip install -r requirements.txt
 
 ## Environment variables
 Create `.env` file and put database connections:  
+DB_ENGINE=<`DB_ENGINE`>
 DB_HOST=<`HOST`>  
 DB_PORT=<`PORT`>  
 DB_NAME=<`NAME`>  
