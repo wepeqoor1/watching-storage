@@ -21,11 +21,11 @@ INSTALLED_APPS = ['datacenter']
 
 SECRET_KEY = env('DJANGO_SECRET_KEY')
 
-DEBUG = env.bool('DEBUG') or False
+DEBUG = env.bool('DEBUG', False)
 
 ROOT_URLCONF = 'project.urls'
 
-ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS') or '127.0.0.1:8000'
+ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', '127.0.0.1:8000')
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
